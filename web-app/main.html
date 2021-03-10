@@ -152,7 +152,9 @@
             font-weight: lighter;
         }
 
-
+        .use-info>.p-info-text {
+            font-size: 20px;
+        }
         /* 신규 강좌 공지 */
         .notice-lecture {
             margin-left: 5%;
@@ -160,39 +162,51 @@
             margin-top: 50px;
         }
 
+        .notice-lecture>img {
+            display: inline;
+            width:40px;
+            margin-right : 2%;
+        }
+
         .notice-lecture>p {
             display: inline;
-            font-size: 20px;
+            font-size: 30px;
+            
         }
 
         .notice-lecture>marquee {
             margin-left: 20px;
             width: 30%;
+            border : 0.5px solid #E5E5E5;
+            border-radius: 10px;
         }
 
         /* 이모지 + 설명  */
 
         .info-contents {
-            margin-top: 70px;
+
             white-space: normal;
         }
 
         .info-detail {
             float: left;
+            margin-top : 100px;
             height: 100px;
         }
 
         .info-imoji {
             float: left;
-            text-align: center;
+            
             width: 5%;
             margin-left: 5%;
+            margin-right :3%;
         }
 
         .info-content {
-            width: 85%;
+            width: 82%;
             margin-right: 5%;
             float: left;
+            font-size: 18px;
         }
 
         .info-detail>div {
@@ -200,8 +214,9 @@
         }
 
         .info-imoji>img {
-            margin-top: 20%;
-            width: 30%;
+            margin-top: 20%;;
+            width: 70px;
+            
         }
 
         /*footer*/
@@ -224,7 +239,7 @@
 
     <!--sidebar-->
     <div class="sidebar">
-        <a href="main.html"><img src="/web-app/img/logo.png" class="logo" /></a>
+        <a href="main.html"><img src="../web-app/img/logo.png" class="logo" /></a>
         <ul class="sidebar_ul">
             <li>
                 <a href="#">추천 강좌 보기</a>
@@ -264,7 +279,7 @@
             <!--이용안내-->
             <div class="use-info">
                 <p class="p-info">이용안내</p>
-                <p>이상의 꽃이 그들은 우리는 가슴에 붙잡아 할지니, 그림자는 되는 이것이다. 인생을 소리다.이것은 찬미를 이는 가슴에 만천하의 것이다.
+                <p class="p-info-text">이상의 꽃이 그들은 우리는 가슴에 붙잡아 할지니, 그림자는 되는 이것이다. 인생을 소리다.이것은 찬미를 이는 가슴에 만천하의 것이다.
                     그들에게 굳세게 않는 심장의 것이다. 길지 때에, 되려니와, 아름답고 얼음과 기쁘며, 않는 찬미를 것이다. 용감하고 위하여 청춘에서만 대한
                     그들의 불어 끓는</p>
             </div>
@@ -272,7 +287,8 @@
 
             <!--강좌 신규 개설-->
             <div class="notice-lecture">
-                <p>🔊 강좌 신규 개설</p>
+                <img src="../web-app/img/loud-speaker.png"/>
+                <p> 강좌 신규 개설</p>
                 <marquee scrollamount="6" class="marquee-notice">
                     강좌 신규입돠
                 </marquee>
@@ -283,7 +299,8 @@
             <div class="info-contents">
                 <div class="info-detail">
                     <div class="info-imoji">
-                        <i class="fas fa-exclamation-circle"></i>
+                        <img src="../web-app/img/question.png"/>
+
                     </div>
                     <div class="info-content">
                         <p>이상의 꽃이 그들은 우리는 가슴에 붙잡아 할지니, 그림자는 되는 이것이다. 인생을 소리다.이것은 찬미를 이는 가슴에 만천하의 것이다.
@@ -296,7 +313,7 @@
                 </div>
                 <div class="info-detail">
                     <div class="info-imoji">
-                        <img src="/web-app/img/report.png" />
+                        <img src="../web-app/img/report.png" />
                     </div>
                     <div class="info-content">
                         <p>이상의 꽃이 그들은 우리는 가슴에 붙잡아 할지니, 그림자는 되는 이것이다. 인생을 소리다.이것은 찬미를 이는 가슴에 만천하의 것이다.
