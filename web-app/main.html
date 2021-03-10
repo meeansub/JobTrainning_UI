@@ -1,260 +1,260 @@
 <!DOCTYPE html>
 <html lang="ko">
 
-    <head>
-        <!-- <link rel="stylesheet" href="main.css"/> -->
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link
-            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400&display=swap"
-            rel="stylesheet">
-        <title>Document</title>
-        <style>
-            :root {
-                /*color*/
-                --color-light-beige: #EDEDED;
-                --color-light-sky-blue: #f1f8ff;
-                --color-blue: #1d378b;
-                --color-sky-blue: #4193D0;
-                --color-dark-blue: #243887;
-                --color-light-grey: #dbdbdb;
-                --color-grey: #6D6E70;
-                --color-dark-grey: #6D6E70;
-                --color-black: #1e1e1e;
+<head>
+    <!-- <link rel="stylesheet" href="main.css"/> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        :root {
+            /*color*/
+            --color-light-beige: #EDEDED;
+            --color-light-sky-blue: #f1f8ff;
+            --color-blue: #1d378b;
+            --color-sky-blue: #4193D0;
+            --color-dark-blue: #243887;
+            --color-light-grey: #dbdbdb;
+            --color-grey: #6D6E70;
+            --color-dark-grey: #6D6E70;
+            --color-black: #1e1e1e;
 
-                /*font*/
-                --font-small: 15px;
-                --font-small-medium: 20px;
-                --font-medium-large: 25px;
+            /*font*/
+            --font-small: 15px;
+            --font-small-medium: 20px;
+            --font-medium-large: 25px;
 
-                /*margin*/
-                --margin-small: 10px;
-                --margin-small-medium: 15px;
-                --margin-medium: 20px;
-                --margin-medium-large: 25px;
-                --margin-large: 30px;
-            }
+            /*margin*/
+            --margin-small: 10px;
+            --margin-small-medium: 15px;
+            --margin-medium: 20px;
+            --margin-medium-large: 25px;
+            --margin-large: 30px;
+        }
 
-            * {
-                box-sizing: border-box;
-                width: 100%;
-            }
+        * {
+            box-sizing: border-box;
+            width: 100%;
+        }
 
-            body {
-                margin: 0;
-                padding: 0;
-                cursor: default;
-                font-family: 'Noto Sans KR', sans-serif;
-            }
+        body {
+            margin: 0;
+            padding: 0;
+            cursor: default;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
 
-            /*sidebar시작*/
+        /*sidebar시작*/
 
-            .sidebar {
-                position: absolute;
-                left: 0;
-                background-color: var(--color-light-beige);
-                width: 12%;
-                height: 100%;
-                border-right: solid 1px var(--color-light-grey);
-            }
+        .sidebar {
+            position: absolute;
+            left: 0;
+            background-color: var(--color-light-beige);
+            width: 12%;
+            height: 100%;
+            border-right: solid 1px var(--color-light-grey);
+        }
 
-            .logo {
-                width: 80%;
-                margin: var(--margin-medium-large) var(--margin-small);
-            }
+        .logo {
+            width: 80%;
+            margin: var(--margin-medium-large) var(--margin-small);
+        }
 
-            .sidebar_ul {
-                list-style: none;
-                width: 100%;
-                padding: 0;
-            }
+        .sidebar_ul {
+            list-style: none;
+            width: 100%;
+            padding: 0;
+        }
 
-            .sidebar_ul > li {
-                padding: calc(var(--margin-large)) var(--margin-small);
-            }
+        .sidebar_ul>li {
+            padding: calc(var(--margin-large)) var(--margin-small);
+        }
 
-            .sidebar_ul > :first-child {
-                margin-top: calc(var(--margin-medium-large));
-            }
+        .sidebar_ul> :first-child {
+            margin-top: calc(var(--margin-medium-large));
+        }
 
-            .sidebar_ul > li > a {
-                font-size: calc(var(--font-medium-large)*0.9);
-                font-weight: 500;
-                text-decoration: none;
-                color: var(--color-black);
-            }
+        .sidebar_ul>li>a {
+            font-size: calc(var(--font-medium-large)*0.9);
+            font-weight: 500;
+            text-decoration: none;
+            color: var(--color-black);
+        }
 
-            .sidebar_ul > li:hover {
-                border-right: 5px solid var(--color-sky-blue);
-            }
+        .sidebar_ul>li:hover {
+            border-right: 5px solid var(--color-sky-blue);
+        }
 
-            /*content 시작*/
-            .content {
-                position: absolute;
-                right: 0;
-                background-color: var(--color-light-beige);
-                width: 88%;
-                height: 100%;
-                padding: var(--margin-small) var(--margin-medium);
-            }
+        /*content 시작*/
+        .content {
+            position: absolute;
+            right: 0;
+            background-color: var(--color-light-beige);
+            width: 88%;
+            height: 100%;
+            padding: var(--margin-small) var(--margin-medium);
+        }
 
-            header {
-                padding: var(--margin-small-medium);
-                border-bottom: dotted 1px var(--color-black);
-            }
+        header {
+            padding: var(--margin-small-medium);
+            border-bottom: dotted 1px var(--color-black);
+        }
 
-            .login-info {
-                text-align: right;
-            }
+        .login-info {
+            text-align: right;
+        }
 
-            .login-info > span {
-                font-size: calc(var(--font-small)*1.1);
-                margin: 0 var(--margin-small);
-            }
+        .login-info>span {
+            font-size: calc(var(--font-small)*1.1);
+            margin: 0 var(--margin-small);
+        }
 
-            .logout {
-                width: 80px;
-                color: red;
-                border-radius: 10%;
-            }
+        .logout {
+            width: 80px;
+            color: red;
+            border-radius: 10%;
+        }
 
-            .notice-lecture {}
+        .notice-lecture {}
 
-            .each-notice {}
+        .each-notice {}
 
-            .info-detail {
-                float: left;
-            }
+        .info-detail {
+            float: left;
+        }
 
-            .info-imoji {
-                width: 10%;
-                float: left;
-                text-align: center;
-            }
-            .info-contents {
-                width: 85%;
-                float: left;
-            }
+        .info-imoji {
+            width: 10%;
+            float: left;
+            text-align: center;
+        }
 
-            .info-detail > div {
-                display: inline;
-            }
-            .info-imoji > img {
-                margin-top:20%;
-                width: 30%;
-            }
-        </style>
-    </head>
+        .info-contents {
+            width: 85%;
+            float: left;
+        }
 
-    <body>
+        .info-detail>div {
+            display: inline;
+        }
 
-        <!--sidebar-->
-        <div class="sidebar">
-            <a href="main.html"><img src="/web-app/img/logo.png" class="logo"/></a>
-            <ul class="sidebar_ul">
-                <li>
-                    <a href="#">추천 강좌 보기</a>
-                </li>
-                <li>
-                    <a href="#">주제별 교육 검색</a>
-                </li>
-                <li>
-                    <a href="#">기관별 교육 검색</a>
-                </li>
-                <li>
-                    <a href="#">주요 교육기관</a>
-                </li>
-                <li>
-                    <a href="#">교육 주제 범례</a>
-                </li>
-                <li>
-                    <a href="#">관리자</a>
-                </li>
-            </ul>
-        </div>
-        <!--/sidebar-->
+        .info-imoji>img {
+            margin-top: 20%;
+            width: 30%;
+        }
+    </style>
+</head>
 
-        <!--content-->
-        <div class="content">
-            <!--header-->
-            <header>
-                <div class="login-info">
-                    <span>죠르디님 환영합니다!</span>
-                    <button type="button" class="logout">로그아웃</button>
+<body>
+
+    <!--sidebar-->
+    <div class="sidebar">
+        <a href="main.html"><img src="/web-app/img/logo.png" class="logo" /></a>
+        <ul class="sidebar_ul">
+            <li>
+                <a href="#">추천 강좌 보기</a>
+            </li>
+            <li>
+                <a href="#">주제별 교육 검색</a>
+            </li>
+            <li>
+                <a href="#">기관별 교육 검색</a>
+            </li>
+            <li>
+                <a href="#">주요 교육기관</a>
+            </li>
+            <li>
+                <a href="#">교육 주제 범례</a>
+            </li>
+            <li>
+                <a href="#">관리자</a>
+            </li>
+        </ul>
+    </div>
+    <!--/sidebar-->
+
+    <!--content-->
+    <div class="content">
+        <!--header-->
+        <header>
+            <div class="login-info">
+                <span>죠르디님 환영합니다!</span>
+                <button type="button" class="logout">로그아웃</button>
+            </div>
+        </header>
+        <!--header-->
+
+        <!--section-->
+        <section>
+            <!--이용안내-->
+            <div class="use-info">
+                <h1>이용안내</h1>
+                <p>이상의 꽃이 그들은 우리는 가슴에 붙잡아 할지니, 그림자는 되는 이것이다. 인생을 소리다.이것은 찬미를 이는 가슴에 만천하의 것이다.
+                    그들에게 굳세게 않는 심장의 것이다. 길지 때에, 되려니와, 아름답고 얼음과 기쁘며, 않는 찬미를 것이다. 용감하고 위하여 청춘에서만 대한
+                    그들의 불어 끓는</p>
+            </div>
+            <!--/이용안내-->
+
+            <!--강좌 신규 개설-->
+            <div class="notice-lecture">
+                <div class="each-notice">
+                    <p>새로운 강좌 1</p>
                 </div>
-            </header>
-            <!--header-->
-
-            <!--section-->
-            <section>
-                <!--이용안내-->
-                <div class="use-info">
-                    <h1>이용안내</h1>
-                    <p>이상의 꽃이 그들은 우리는 가슴에 붙잡아 할지니, 그림자는 되는 이것이다. 인생을 소리다.이것은 찬미를 이는 가슴에 만천하의 것이다.
-                        그들에게 굳세게 않는 심장의 것이다. 길지 때에, 되려니와, 아름답고 얼음과 기쁘며, 않는 찬미를 것이다. 용감하고 위하여 청춘에서만 대한
-                        그들의 불어 끓는</p>
+                <div class="each-notice">
+                    <p>새로운 강좌 2</p>
                 </div>
-                <!--/이용안내-->
-
-                <!--강좌 신규 개설-->
-                <div class="notice-lecture">
-                    <div class="each-notice">
-                        <p>새로운 강좌 1</p>
-                    </div>
-                    <div class="each-notice">
-                        <p>새로운 강좌 2</p>
-                    </div>
-                    <div class="each-notice">
-                        <p>새로운 강좌 3</p>
-                    </div>
-                    <div class="each-notice">
-                        <p>새로운 강좌 4</p>
-                    </div>
+                <div class="each-notice">
+                    <p>새로운 강좌 3</p>
                 </div>
-                <!--/강좌 신규 개설-->
+                <div class="each-notice">
+                    <p>새로운 강좌 4</p>
+                </div>
+            </div>
+            <!--/강좌 신규 개설-->
 
-                <!--안내문구-->
-                <div>
-                    <div class="info-detail">
-                        <div class="info-imoji">
-                            <img src="/web-app/img/question.png"/>
-                        </div>
-                        <div class="info-contents">
-                            <p>이상의 꽃이 그들은 우리는 가슴에 붙잡아 할지니, 그림자는 되는 이것이다. 인생을 소리다.이것은 찬미를 이는 가슴에 만천하의 것이다.
-                                그들에게 굳세게 않는 심장의 것이다. 길지 때에, 되려니와, 아름답고 얼음과 기쁘며, 않는 찬미를 것이다. 용감하고 위하여 청춘에서만 대한
-                                그들의 불어 끓는다. 내는 가치를 풀이 우리 스며들어 있는 불어 것이다. 구하지 구하지 꾸며 이것이다. 공자는 붙잡아 구하지 사람은 얼마나
-                                날카로우나 따뜻한 노년에게서 아니한 이것이다. 전인 실현에 위하여 쓸쓸한 가는 인도하겠다는 무한한 풀이 봄바람이다. 커다란 앞이 관현악이며,
-                                것이다.</p>
-                        </div>
-
+            <!--안내문구-->
+            <div>
+                <div class="info-detail">
+                    <div class="info-imoji">
+                        <img src="/web-app/img/question.png" />
                     </div>
-                    <div class="info-detail">
-                        <div class="info-imoji">
-                            <img src="/web-app/img/report.png"/>
-                        </div>
-                        <div class="info-contents">
-                            <p>이상의 꽃이 그들은 우리는 가슴에 붙잡아 할지니, 그림자는 되는 이것이다. 인생을 소리다.이것은 찬미를 이는 가슴에 만천하의 것이다.
-                                그들에게 굳세게 않는 심장의 것이다. 길지 때에, 되려니와, 아름답고 얼음과 기쁘며, 않는 찬미를 것이다. 용감하고 위하여 청춘에서만 대한
-                                그들의 불어 끓는다. 내는 가치를 풀이 우리 스며들어 있는 불어 것이다. 구하지 구하지 꾸며 이것이다. 공자는 붙잡아 구하지 사람은 얼마나
-                                날카로우나 따뜻한 노년에게서 아니한 이것이다. 전인 실현에 위하여 쓸쓸한 가는 인도하겠다는 무한한 풀이 봄바람이다. 커다란 앞이 관현악이며,
-                                것이다.</p>
-                        </div>
+                    <div class="info-contents">
+                        <p>이상의 꽃이 그들은 우리는 가슴에 붙잡아 할지니, 그림자는 되는 이것이다. 인생을 소리다.이것은 찬미를 이는 가슴에 만천하의 것이다.
+                            그들에게 굳세게 않는 심장의 것이다. 길지 때에, 되려니와, 아름답고 얼음과 기쁘며, 않는 찬미를 것이다. 용감하고 위하여 청춘에서만 대한
+                            그들의 불어 끓는다. 내는 가치를 풀이 우리 스며들어 있는 불어 것이다. 구하지 구하지 꾸며 이것이다. 공자는 붙잡아 구하지 사람은 얼마나
+                            날카로우나 따뜻한 노년에게서 아니한 이것이다. 전인 실현에 위하여 쓸쓸한 가는 인도하겠다는 무한한 풀이 봄바람이다. 커다란 앞이 관현악이며,
+                            것이다.</p>
+                    </div>
+
+                </div>
+                <div class="info-detail">
+                    <div class="info-imoji">
+                        <img src="/web-app/img/report.png" />
+                    </div>
+                    <div class="info-contents">
+                        <p>이상의 꽃이 그들은 우리는 가슴에 붙잡아 할지니, 그림자는 되는 이것이다. 인생을 소리다.이것은 찬미를 이는 가슴에 만천하의 것이다.
+                            그들에게 굳세게 않는 심장의 것이다. 길지 때에, 되려니와, 아름답고 얼음과 기쁘며, 않는 찬미를 것이다. 용감하고 위하여 청춘에서만 대한
+                            그들의 불어 끓는다. 내는 가치를 풀이 우리 스며들어 있는 불어 것이다. 구하지 구하지 꾸며 이것이다. 공자는 붙잡아 구하지 사람은 얼마나
+                            날카로우나 따뜻한 노년에게서 아니한 이것이다. 전인 실현에 위하여 쓸쓸한 가는 인도하겠다는 무한한 풀이 봄바람이다. 커다란 앞이 관현악이며,
+                            것이다.</p>
                     </div>
                 </div>
-                <!--/안내문구-->
-            </section>
-            <!--/section-->
+            </div>
+            <!--/안내문구-->
+        </section>
+        <!--/section-->
 
-            <!--footer-->
-            <footer>
-                <div></div>
-                <div></div>
-            </footer>
-            <!--/footer-->
-        </div>
-        <!--content-->
-    </body>
+        <!--footer-->
+        <footer>
+            <div></div>
+            <div></div>
+        </footer>
+        <!--/footer-->
+    </div>
+    <!--content-->
+</body>
 
 </html>
