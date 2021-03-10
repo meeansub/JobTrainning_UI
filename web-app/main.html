@@ -13,6 +13,10 @@
     <title>Document</title>
     <style>
         :root {
+            /*screen size*/
+            --screen-width: 1920px;
+            --screen-height: 1080px;
+
             /*color*/
             --color-light-beige: #FDFDFD;
             --color-light-sky-blue: #f1f8ff;
@@ -46,7 +50,8 @@
             padding: 0;
             cursor: default;
             font-family: 'Noto Sans KR', sans-serif;
-            width: 1920px;
+            width: var(--screen-width);
+            height: var(--screen-height);
         }
 
         /*sidebar시작*/
@@ -55,10 +60,11 @@
             position: absolute;
             left: 0;
             background-color: var(--color-light-beige);
-            width: 12%;
-            height: 100%;
+            width: 20px;
+            height: var(--screen-height);
             border-right: solid 1px var(--color-light-grey);
             white-space: nowrap;
+            background-color: #1d378b;
         }
 
         .logo {
@@ -96,15 +102,17 @@
             position: absolute;
             right: 0;
             background-color: var(--color-light-beige);
-            width: 88%;
-            height: 100%;
+            width: 1700px;
+            height: var(--screen-height);
             padding: var(--margin-small) var(--margin-medium);
             white-space: nowrap;
+            background-color: pink;
         }
 
         header {
             padding: var(--margin-small-medium);
             border-bottom: dotted 1px var(--color-black);
+            height: 5%;
         }
 
         .login-info {
@@ -118,7 +126,7 @@
 
         .logout {
             width: 80px;
-            color: red;
+            color: var(--color-sky-blue);
             border-radius: 10%;
         }
 
@@ -258,7 +266,7 @@
 
         <!--footer-->
         <footer>
-            <div></div>
+            <div class=""></div>
             <div></div>
         </footer>
         <!--/footer-->
