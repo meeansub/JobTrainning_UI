@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <!-- <link rel="stylesheet" href="main.css"/> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        :root {
+            /*screen size*/
+            --screen-width: 1920px;
+            --screen-height: 1080px;
+
+            /*color*/
+            --color-light-beige: #FDFDFD;
+            --color-light-sky-blue: #f1f8ff;
+            --color-blue: #1d378b;
+            --color-sky-blue: #4193D0;
+            --color-dark-blue: #243887;
+            --color-light-grey: #dbdbdb;
+            --color-grey: #6D6E70;
+            --color-dark-grey: #6D6E70;
+            --color-black: #1e1e1e;
+
+            /*font*/
+            --font-small: 15px;
+            --font-small-medium: 20px;
+            --font-medium-large: 25px;
+
+            /*margin*/
+            --margin-small: 10px;
+            --margin-small-medium: 15px;
+            --margin-medium: 20px;
+            --margin-medium-large: 25px;
+            --margin-large: 30px;
+
+            /*padding*/
+            --padding-small: 10px;
+            --padding-small-medium: 15px;
+            --padding-medium: 20px;
+            --padding-medium-large: 25px;
+            --padding-large: 30px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            cursor: default;
+            font-family: 'Noto Sans KR', sans-serif;
+            width: var(--screen-width);
+            height: var(--screen-height);
+        }
+
+        /*sidebar시작*/
+
+        .sidebar {
+            position: absolute;
+            left: 0;
+            background-color: var(--color-light-beige);
+            width: 12%;
+            height: var(--screen-height);
+            border-right: solid 1px var(--color-light-grey);
+            white-space: nowrap;
+        }
+
+        .logo {
+            width: 200px;
+            margin: var(--margin-medium-large) var(--margin-small);
+        }
+
+        .sidebar_ul {
+            list-style: none;
+            width: 100%;
+            padding: 0;
+        }
+
+        .sidebar_ul>li {
+            padding: calc(var(--padding-large)) var(--padding-small);
+        }
+
+        .sidebar_ul> :first-child {
+            margin-top: calc(var(--margin-medium-large));
+        }
+
+        .sidebar_ul>li>a {
+            font-size: calc(var(--font-medium-large)*0.9);
+            font-weight: 500;
+            text-decoration: none;
+            color: var(--color-black);
+        }
+
+        .sidebar_ul>li:hover {
+            border-right: 5px solid var(--color-sky-blue);
+        }
+
+        /*content 시작*/
+        .content {
+            position: absolute;
+            right: 0;
+            background-color: var(--color-light-beige);
+            width: 88%;
+            height: var(--screen-height);
+            padding: var(--padding-small) var(--padding-medium);
+            white-space: nowrap;
+        }
+
+        header {
+            padding: var(--padding-small-medium);
+            border-bottom: dotted 1px var(--color-black);
+            height: 5%;
+        }
+
+        .login-info {
+            text-align: right;
+        }
+
+        .login-info>span {
+            font-size: calc(var(--font-small)*1.3);
+            margin: 0 var(--margin-small);
+            font-weight: 400;
+        }
+
+        .logout {
+            width: 80px;
+            color: var(--color-light-beige);
+            border-radius: 10%;
+            background-color: var(--color-sky-blue);
+            border: 1px solid var(--color-sky-blue);
+            padding: calc(var(--padding-small)*0.5);
+        }
+
+        /* 이용 안내 */
+
+        .use-info {
+            margin-right: 5%;
+            margin-left: 5%;
+            white-space: normal;
+        }
+
+        .use-info>.p-info {
+            font-size: 50px;
+            font-weight: lighter;
+        }
+
+        .use-info>.p-info-text {
+            font-size: 20px;
+        }
+        /* 신규 강좌 공지 */
+        .notice-lecture {
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-top: 50px;
+        }
+
+        .notice-lecture>img {
+            display: inline;
+            width:40px;
+            margin-right : 2%;
+        }
+
+        .notice-lecture>p {
+            display: inline;
+            font-size: 30px;
+            
+        }
+
+        .notice-lecture>marquee {
+            margin-left: 20px;
+            width: 30%;
+            border : 0.5px solid #E5E5E5;
+            border-radius: 10px;
+        }
+
+        /* 이모지 + 설명  */
+
+        .info-contents {
+
+            white-space: normal;
+        }
+
+        .info-detail {
+            float: left;
+            margin-top : 100px;
+            height: 100px;
+        }
+
+        .info-imoji {
+            float: left;
+            
+            width: 5%;
+            margin-left: 5%;
+            margin-right :3%;
+        }
+
+        .info-content {
+            width: 82%;
+            margin-right: 5%;
+            float: left;
+            font-size: 18px;
+        }
+
+        .info-detail>div {
+            display: inline;
+        }
+
+        .info-imoji>img {
+            margin-top: 20%;;
+            width: 70px;
+            
+        }
+
+        /*footer*/
+        footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: inline-block;
+            background-color: var(--color-light-grey);
+        }
+
+        .footer-info {
+            padding: var(--padding-small-medium);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--sidebar-->
+    <div class="sidebar">
+        <a href="03_Main.html"><img src="../web-app/img/logo.png" class="logo" /></a>
+        <ul class="sidebar_ul">
+            <li>
+                <a href="04_RecommendationEdu.html">추천 강좌 보기</a>
+            </li>
+            <li>
+                <a href="05_SubjectEdu.html">주제별 교육 검색</a>
+            </li>
+            <li>
+                <a href="06_AcademyEdu.html">기관별 교육 검색</a>
+            </li>
+            <li>
+                <a href="07_SelectEdu.html">주요 교육기관</a>
+            </li>
+            <li>
+                <a href="08_LegendEdu.html">교육 주제 범례</a>
+            </li>
+            <li>
+                <a href="09_AdminMain.html">관리자</a>
+            </li>
+        </ul>
+    </div>
+    <!--/sidebar-->
+
+    <!--content-->
+    <div class="content">
+        <!--header-->
+        <header>
+            <div class="login-info">
+                <span>죠르디님 환영합니다!</span>
+                <button type="button" class="logout">로그아웃</button>
+            </div>
+        </header>
+        <!--header-->
+
+        <!--section-->
+        <section>
+            <!--이용안내-->
+            <div class="use-info">
+                <p class="p-info">이용안내</p>
+                <p class="p-info-text">이상의 꽃이 그들은 우리는 가슴에 붙잡아 할지니, 그림자는 되는 이것이다. 인생을 소리다.이것은 찬미를 이는 가슴에 만천하의 것이다.
+                    그들에게 굳세게 않는 심장의 것이다. 길지 때에, 되려니와, 아름답고 얼음과 기쁘며, 않는 찬미를 것이다. 용감하고 위하여 청춘에서만 대한
+                    그들의 불어 끓는</p>
+            </div>
+            <!--/이용안내-->
+
+            <!--강좌 신규 개설-->
+            <div class="notice-lecture">
+                <img src="../web-app/img/loud-speaker.png"/>
+                <p> 강좌 신규 개설</p>
+                <marquee scrollamount="6" class="marquee-notice">
+                    강좌 신규입돠
+                </marquee>
+            </div>
+            <!--/강좌 신규 개설-->
+
+            <!--안내문구-->
+            <div class="info-contents">
+                <div class="info-detail">
+                    <div class="info-imoji">
+                        <img src="../web-app/img/question.png"/>
+
+                    </div>
+                    <div class="info-content">
+                        <p>이상의 꽃이 그들은 우리는 가슴에 붙잡아 할지니, 그림자는 되는 이것이다. 인생을 소리다.이것은 찬미를 이는 가슴에 만천하의 것이다.
+                            그들에게 굳세게 않는 심장의 것이다. 길지 때에, 되려니와, 아름답고 얼음과 기쁘며, 않는 찬미를 것이다. 용감하고 위하여 청춘에서만 대한
+                            그들의 불어 끓는다. 내는 가치를 풀이 우리 스며들어 있는 불어 것이다. 구하지 구하지 꾸며 이것이다. 공자는 붙잡아 구하지 사람은 얼마나
+                            날카로우나 따뜻한 노년에게서 아니한 이것이다. 전인 실현에 위하여 쓸쓸한 가는 인도하겠다는 무한한 풀이 봄바람이다. 커다란 앞이 관현악이며,
+                            것이다.</p>
+                    </div>
+
+                </div>
+                <div class="info-detail">
+                    <div class="info-imoji">
+                        <img src="../web-app/img/report.png" />
+                    </div>
+                    <div class="info-content">
+                        <p>이상의 꽃이 그들은 우리는 가슴에 붙잡아 할지니, 그림자는 되는 이것이다. 인생을 소리다.이것은 찬미를 이는 가슴에 만천하의 것이다.
+                            그들에게 굳세게 않는 심장의 것이다. 길지 때에, 되려니와, 아름답고 얼음과 기쁘며, 않는 찬미를 것이다. 용감하고 위하여 청춘에서만 대한
+                            그들의 불어 끓는다. 내는 가치를 풀이 우리 스며들어 있는 불어 것이다. 구하지 구하지 꾸며 이것이다. 공자는 붙잡아 구하지 사람은 얼마나
+                            날카로우나 따뜻한 노년에게서 아니한 이것이다. 전인 실현에 위하여 쓸쓸한 가는 인도하겠다는 무한한 풀이 봄바람이다. 커다란 앞이 관현악이며,
+                            것이다.</p>
+                    </div>
+                </div>
+            </div>
+            <!--/안내문구-->
+        </section>
+        <!--/section-->
+
+        <!--footer-->
+        <footer>
+            <div class="footer-info">
+                <div>
+                    <p>문의처</p>
+                </div>
+                <div>
+                    <p>교육담당자 | 인사팀 정병석 과장</p>
+                </div>
+            </div>
+    </div>
+    </footer>
+    <!--/footer-->
+    </div>
+    <!--content-->
+</body>
+
+</html>
