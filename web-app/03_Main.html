@@ -132,11 +132,15 @@
 
         .logout {
             width: 80px;
-            color: var(--color-light-beige);
             border-radius: 10%;
             background-color: var(--color-sky-blue);
             border: 1px solid var(--color-sky-blue);
             padding: calc(var(--padding-small)*0.5);
+        }
+
+        .logout>a {
+            text-decoration: none;
+            color: var(--color-light-beige);
         }
 
         /* 이용 안내 */
@@ -144,9 +148,9 @@
         .use-info {
             margin-right: 5%;
             margin-left: 5%;
-            padding-left : 10px;
+            padding-left: 10px;
             padding-right: 10px;
-            padding-bottom : 10px;
+            padding-bottom: 10px;
             /* 배경색 수정 필요 */
             background-color: #DFDFDF;
             white-space: normal;
@@ -160,6 +164,7 @@
         .use-info>.p-info-text {
             font-size: 20px;
         }
+
         /* 신규 강좌 공지 */
         .notice-lecture {
             margin-left: 5%;
@@ -169,20 +174,20 @@
 
         .notice-lecture>img {
             display: inline;
-            width:40px;
-            margin-right : 2%;
+            width: 40px;
+            margin-right: 2%;
         }
 
         .notice-lecture>p {
             display: inline;
             font-size: 30px;
-            
+
         }
 
         .notice-lecture>marquee {
             margin-left: 20px;
             width: 30%;
-            border : 0.5px solid #E5E5E5;
+            border: 0.5px solid #E5E5E5;
             border-radius: 10px;
         }
 
@@ -195,16 +200,16 @@
 
         .info-detail {
             float: left;
-            margin-top : 100px;
+            margin-top: 100px;
             height: 100px;
         }
 
         .info-imoji {
             float: left;
-            
+
             width: 5%;
             margin-left: 5%;
-            margin-right :3%;
+            margin-right: 3%;
         }
 
         .info-content {
@@ -219,9 +224,10 @@
         }
 
         .info-imoji>img {
-            margin-top: 20%;;
+            margin-top: 20%;
+            ;
             width: 70px;
-            
+
         }
 
         /*footer*/
@@ -274,7 +280,11 @@
         <header>
             <div class="login-info">
                 <span>죠르디님 환영합니다!</span>
-                <button type="button" class="logout">로그아웃</button>
+                <button type="button" class="logout">
+                    <a href="01_Index.html">
+                        로그아웃
+                    </a>
+                </button>
             </div>
         </header>
         <!--header-->
@@ -292,7 +302,7 @@
 
             <!--강좌 신규 개설-->
             <div class="notice-lecture">
-                <img src="img/loud-speaker.png"/>
+                <img src="img/loud-speaker.png" />
                 <p> 강좌 신규 개설</p>
                 <marquee scrollamount="6" class="marquee-notice">
                     강좌 신규입돠
@@ -304,7 +314,7 @@
             <div class="info-contents">
                 <div class="info-detail">
                     <div class="info-imoji">
-                        <img src="img/question.png"/>
+                        <img src="img/question.png" />
 
                     </div>
                     <div class="info-content">
