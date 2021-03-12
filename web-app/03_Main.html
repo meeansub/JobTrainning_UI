@@ -147,7 +147,6 @@
         /* 이용 안내 */
 
         .use-info {
-
             padding: 0 20px 20px 20px;
             /* 배경색 수정 필요 */
             /*background-color: #DFDFDF;*/
@@ -192,6 +191,22 @@
             width: 30%;
             border: 0.5px solid #E5E5E5;
             border-radius: 10px;
+
+            animation: neon 2s ease infinite;
+        }
+
+        @keyframes neon {
+            10% {
+                color: #FED128;
+            }
+
+            30% {
+                color: red;
+            }
+
+            50% {
+                color: blue;
+            }
         }
 
         /* 이모지 + 설명  */
