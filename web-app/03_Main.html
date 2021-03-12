@@ -19,6 +19,7 @@
 
             /*color*/
             --color-light-beige: #FDFDFD;
+            --color-beige: #EBE8E8;
             --color-light-sky-blue: #f1f8ff;
             --color-blue: #1d378b;
             --color-sky-blue: #4193D0;
@@ -146,22 +147,24 @@
         /* 이용 안내 */
 
         .use-info {
-            margin-right: 5%;
-            margin-left: 5%;
-            padding-left: 10px;
-            padding-right: 10px;
-            padding-bottom: 10px;
+
+            padding: 0 20px 20px 20px;
             /* 배경색 수정 필요 */
-            background-color: #DFDFDF;
+            /*background-color: #DFDFDF;*/
+            background: linear-gradient(20deg, var(--color-light-sky-blue), var(--color-sky-blue));
             white-space: normal;
         }
 
-        .use-info>.p-info {
-            font-size: 50px;
-            font-weight: lighter;
+        .use-info-content {
+            padding: 0.5% 5%;
         }
 
-        .use-info>.p-info-text {
+        .use-info-content>.p-info {
+            font-size: 50px;
+            font-weight: 500;
+        }
+
+        .use-info-content>.p-info-text {
             font-size: 20px;
         }
 
@@ -293,10 +296,12 @@
         <section>
             <!--이용안내-->
             <div class="use-info">
-                <p class="p-info">이용안내</p>
-                <p class="p-info-text">이상의 꽃이 그들은 우리는 가슴에 붙잡아 할지니, 그림자는 되는 이것이다. 인생을 소리다.이것은 찬미를 이는 가슴에 만천하의 것이다.
-                    그들에게 굳세게 않는 심장의 것이다. 길지 때에, 되려니와, 아름답고 얼음과 기쁘며, 않는 찬미를 것이다. 용감하고 위하여 청춘에서만 대한
-                    그들의 불어 끓는</p>
+                <div class="use-info-content">
+                    <p class="p-info">이용안내</p>
+                    <p class="p-info-text">이상의 꽃이 그들은 우리는 가슴에 붙잡아 할지니, 그림자는 되는 이것이다. 인생을 소리다.이것은 찬미를 이는 가슴에 만천하의 것이다.
+                        그들에게 굳세게 않는 심장의 것이다. 길지 때에, 되려니와, 아름답고 얼음과 기쁘며, 않는 찬미를 것이다. 용감하고 위하여 청춘에서만 대한
+                        그들의 불어 끓는</p>
+                </div>
             </div>
             <!--/이용안내-->
 
