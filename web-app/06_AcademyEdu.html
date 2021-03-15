@@ -57,7 +57,7 @@
             padding: 0;
             cursor: default;
             font-family: 'Noto Sans KR', sans-serif;
-            width: var(--screen-width);
+/*            width: var(--screen-width);*/
             height: var(--screen-height);
         }
 
@@ -137,6 +137,10 @@
             background-color: var(--color-sky-blue);
             border: 1px solid var(--color-sky-blue);
             padding: calc(var(--padding-small)*0.5);
+        }
+        .logout>a{
+            text-decoration: none;
+            color: var(--color-light-beige);
         }
 
         /* 이용 안내 */
@@ -255,7 +259,7 @@
         <header>
             <div class="login-info">
                 <span>죠르디님 환영합니다!</span>
-                <button type="button" class="logout">로그아웃</button>
+                <button type="button" class="logout"><a href="01_Index.html">로그아웃</a></button>
             </div>
         </header>
         <!--header-->

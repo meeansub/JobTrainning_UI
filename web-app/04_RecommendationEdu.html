@@ -57,7 +57,7 @@
             padding: 0;
             cursor: default;
             font-family: 'Noto Sans KR', sans-serif;
-            width: var(--screen-width);
+/*            width: var(--screen-width);*/
             height: var(--screen-height);
         }
 
@@ -132,11 +132,14 @@
 
         .logout {
             width: 80px;
-            color: var(--color-light-beige);
             border-radius: 10%;
             background-color: var(--color-sky-blue);
             border: 1px solid var(--color-sky-blue);
             padding: calc(var(--padding-small)*0.5);
+        }
+        .logout>a{
+            text-decoration: none;
+            color: var(--color-light-beige);
         }
 
         /* 이용 안내 */
@@ -257,17 +260,13 @@
         <header>
             <div class="login-info">
                 <span>죠르디님 환영합니다!</span>
-                <button type="button" class="logout">로그아웃</button>
+                <button type="button" class="logout"><a href="01_Index.html">로그아웃</a></button>
             </div>
         </header>
         <!--header-->
 
         <!--section-->
         <section>
-
-
-
-
             <header class="purple-header">
                 <div class="purple-header__select">
 
@@ -286,12 +285,12 @@
 
             </header>
 
-            <section class="notice-bar">
+            <aticle class="notice-bar">
                 <div>
                     <img class="icon-sm" src="img/star.svg">
                     : 리더추천강좌
                 </div>
-            </section>
+            </aticle>
 
             <ul class="subject-result">
                 <li class="subject-result__title">총 10개 검색</li>
@@ -311,16 +310,7 @@
                     <span>성공적인 프로젝트 수행을 위한 SW품질관리(무료)</span>
                     <a href="#">상세보기</a>
                 </li>
-
-
             </ul>
-
-
-
-
-
-
-
 
         </section>
         <!--/section-->
@@ -335,7 +325,6 @@
                     <p>교육담당자 | 인사팀 정병석 과장</p>
                 </div>
             </div>
-    </div>
     </footer>
     <!--/footer-->
     </div>
