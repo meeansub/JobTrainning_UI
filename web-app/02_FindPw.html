@@ -1,21 +1,38 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<center><h2>비밀번호 재설정</h2></center> 
-<link rel="stylesheet" href="css/02_FindPw.css">
-<title>Insert title here</title>
-</head>
-<body>
-    <form action="tmp.html">
+    <meta charset="UTF-8">
     <center>
-    <div>
-   <div class="div-info">아이디</div><input class="input-info-box" name="id" type="text" placeholder="아이디를 입력하세요"><br><br>
-   <div class="div-info">이름</div><input class="input-info-box" name="name" type="text" placeholder="이름을 입력하세요"><br><br>
-   <div class="div-info">휴대폰</div><input class="input-info-box" name="phoneNumber" type="text" placeholder=" - 빼고 입력 Ex) 01012345678 "><br><br>
-   <button class="pw-box" type="submit"><div class="input-pw-font">임시 비밀번호 생성</div></button><br>
-    </div>
-</center>
-</form>
+        <h2>비밀번호 재설정</h2>
+    </center>
+    <link rel="stylesheet" href="css/02_FindPw.css">
+    <title>Insert title here</title>
+</head>
+
+<body>
+    <form >
+        <center>
+            <div>
+                <div class="div-info">아이디</div><input class="input-info-box" name="id" type="text"
+                    placeholder="아이디를 입력하세요"><br><br>
+                <div class="div-info">이름</div><input class="input-info-box" name="name" type="text"
+                    placeholder="이름을 입력하세요"><br><br>
+                <div class="div-info">휴대폰</div><input class="input-info-box" name="phoneNumber" type="text"
+                    placeholder=" - 빼고 입력 Ex) 01012345678 "><br><br>
+                <button class="pw-box" type="submit" onclick=createPW() >
+                    <div class="input-pw-font">임시 비밀번호 생성</div>
+                </button><br>
+            </div>
+        </center>
+    </form>
+
+    <script>
+        function createPW() {
+            alert("임시비밀번호가 생성되었습니다.");
+        }
+    </script>
+
 </body>
+
 </html>
