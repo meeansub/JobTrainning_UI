@@ -144,32 +144,27 @@
         }
 
         /* session시작 */
-        .img-button {
-            width: 100px;
-            height: 100px;
-        }
-
-        .image {
-            width: 80px;
-            height: 80px;
-            margin: auto;
-        }
-
-        /*admin 페이지 ul class값 지정 css*/
-        .admin_ul>li {
-            list-style-type: none;
-            float: left;
-            margin-left: 50px;
-            text-align: center;
-        }
-
+      	.img-button {
+              width: 100px;
+            	height: 100px;
+           }
+           .image{
+           	width: 80px;
+            	height: 80px;
+            	margin: auto;
+           }
+      	ul li{
+      		list-style-type:none;
+      		float:left;
+      		margin-left:50px;
+      		text-align:center;
+      	}
         /* session 끝 */
 
         .body {
-            width: 100%;
-            height: 100%;
+           width: 100%;
+           height: 100%;
         }
-
         /*footer*/
         footer {
             position: absolute;
@@ -183,6 +178,7 @@
         .footer-info {
             padding: var(--padding-small-medium);
         }
+
     </style>
 </head>
 
@@ -221,10 +217,10 @@
             <div class="login-info">
                 <span>죠르디님 환영합니다!</span>
                 <button type="button" class="logout">
-                    <a href="01_Index.html">
-                        로그아웃
-                    </a>
-                </button>
+		<a href="01_Index.html">
+			로그아웃
+		</a>
+	</button>
             </div>
         </header>
         <!--header-->
@@ -232,32 +228,27 @@
         <!--section-->
         <!-- 여기에 코드 넣으세요 -->
         <section>
-            <div>
-                <span>관리자 페이지</span>
-                <!--******ul에 class값 지정했습니다!!!!-->
-                <ul class="admin_ul">
-                    <li>
-                        <a href="10_ManageClass.html"><button type="button" class="img-button"><img class="image"
-                                    src="img/class.png"></button> <br></a>
-                        강좌 관리
-                    </li>
-                    <li>
-                        <a href="14_Institution.html"><button type="button" class="img-button"><img class="image"
-                                    src="img/inst.png"></button> <br></a>
-                        교육 기관
-                    </li>
-                    <li>
-                        <a href="13_categoryManage.html"><button type="button" class="img-button"><img class="image"
-                                    src="img/category.png"></button> <br></a>
-                        카테고리
-                    </li>
-                    <li>
-                        <a href="12_AdminInfos.html"><button type="button" class="img-button"><img class="image"
-                                    src="img/info.png"></button> <br></a>
-                        안내 문구
-                    </li>
-                </ul>
-            </div>
+          <div>
+            <span>관리자 페이지</span>
+            <ul>
+              <li>
+                <a href="10_ManageClass.html"><button type="button" class="img-button"><img class="image" src="img/class.png"></button> <br></a>
+                강좌 관리
+              </li>
+              <li>
+                <a href="14_Institution.html"><button type="button" class="img-button"><img class="image" src="img/inst.png"></button> <br></a>
+                교육 기관
+              </li>
+              <li>
+                <a href="13_categoryManage.html"><button type="button" class="img-button"><img class="image" src="img/category.png"></button> <br></a>
+                카테고리
+              </li>
+              <li>
+                <a href="12_AdminInfos.html"><button type="button" class="img-button"><img class="image" src="img/info.png"></button> <br></a>
+                안내 문구
+              </li>
+            </ul>
+          </div>
         </section>
         <!--/section-->
 
