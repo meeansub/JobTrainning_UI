@@ -144,62 +144,71 @@
         }
 
         /* section 시작 */
-      	.sectionMain{
-      		background-color:  ;
-      	}
+        .sectionMain {
+            background-color: ;
+        }
 
-      	#saveButton{
-      		float: right;
-      	}
+        #saveButton {
+            float: right;
+        }
 
-      	#noticeText{
-      		width:80%;
-      		border:1;
-      		overflow:visible;
-      		text-overflow:ellipsis;
-      		margin:3px;
+        #noticeText {
+            width: 80%;
+            border: 1;
+            overflow: visible;
+            text-overflow: ellipsis;
+            margin: 3px;
 
-      	}
-      	#detailNoticeDeleteButton{
-      		overflow:visible;
-      		text-overflow:ellipsis;
-      		margin:3px;
-      		position: absolute;
-      	}
-      	.buttons{
-      		width:40px;
-      		height:40px;
-      		margin:3px;
-      		border:0px;
-      		float: right;
-      		cursor: pointer;
-      	}
-      	.clicked_buttons{
-      		color: ;border-color: #4285f4;
-      		color: #4285f4;
-      		background: #e9f1fe;
-          }
+        }
 
-          #addButton{
-          	padding: 5px;
+        #detailNoticeDeleteButton {
+            overflow: visible;
+            text-overflow: ellipsis;
+            margin: 3px;
+            position: absolute;
+        }
 
-        		 width: 100%;
-          }
-          #section .sectionMain .home {
+        .buttons {
+            width: 40px;
+            height: 40px;
+            margin: 3px;
+            border: 0px;
+            float: right;
+            cursor: pointer;
+        }
+
+        .clicked_buttons {
+            color: ;
+            border-color: #4285f4;
+            color: #4285f4;
+            background: #e9f1fe;
+        }
+
+        #addButton {
+            padding: 5px;
+
+            width: 100%;
+        }
+
+        #section .sectionMain .home {
             width: 40px;
             float: left;
-          }
-          #section .sectionMain #noticeStr {
+        }
+
+        #section .sectionMain #noticeStr {
             line-height: 40px;
-          }
-          button {
+        }
+
+        button {
             background: transparent;
-          }
+        }
+
         /* section 끝 */
         .body {
-           width: 100%;
-           height: 100%;
+            width: 100%;
+            height: 100%;
         }
+
         /*footer*/
         footer {
             position: absolute;
@@ -213,7 +222,6 @@
         .footer-info {
             padding: var(--padding-small-medium);
         }
-
     </style>
 </head>
 
@@ -252,10 +260,10 @@
             <div class="login-info">
                 <span>죠르디님 환영합니다!</span>
                 <button type="button" class="logout">
-		<a href="01_Index.html">
-			로그아웃
-		</a>
-	</button>
+                    <a href="01_Index.html">
+                        로그아웃
+                    </a>
+                </button>
             </div>
         </header>
         <!--header-->
@@ -263,40 +271,40 @@
         <!--section-->
         <!-- 여기에 코드 넣으세요 -->
         <section>
-          <div id="section">
-            <div class = "sectionMain">
+            <div id="section">
+                <div class="sectionMain">
 
-              <form action="#" method="post">
-                <a href='09_AdminMain.html'>
-                  <img class='home' src='img/home.png'>
-                </a>
-                <p id="noticeStr">이용안내</p>
-                <input id = "saveButton" type="submit" value="저장">
-                <p>
-                  <textarea id = "noticeText"  rows="10"  placeholder="내용을 입력해주세요."></textarea>
-                </p>
+                    <form action="#" method="post">
+                        <a href='09_AdminMain.html'>
+                            <img class='home' src='img/home.png'>
+                        </a>
+                        <p id="noticeStr">이용안내</p>
+                        <input id="saveButton" type="submit" value="저장">
+                        <p>
+                            <textarea id="noticeText" rows="10" placeholder="내용을 입력해주세요."></textarea>
+                        </p>
 
 
-                <a id="detailNoticeStr">세부공지</a>
-                <p>
-                  <textarea id = "noticeText"  rows="2"  placeholder="내용을 입력해주세요."></textarea>
+                        <a id="detailNoticeStr">세부공지</a>
+                        <p>
+                            <textarea id="noticeText" rows="2" placeholder="내용을 입력해주세요."></textarea>
 
-                  <button   id="detailNoticeDeleteButton" >-</button>
-                  <button  class = "buttons"    >?</button>
-                  <button  class = "buttons"   >!</button>
+                            <button id="detailNoticeDeleteButton">-</button>
+                            <button class="buttons">?</button>
+                            <button class="buttons">!</button>
 
-                </p>
-                <div id="addTextarea">
+                        </p>
+                        <div id="addTextarea">
+
+                        </div>
+                        <div>
+                            <button id="addButton" onclick="">+</button>
+                        </div>
+
+                    </form>
 
                 </div>
-                <div>
-                  <button  id = "addButton"  onclick="" >+</button>
-                </div>
-
-              </form>
-
             </div>
-          </div>
         </section>
         <!--/section-->
 

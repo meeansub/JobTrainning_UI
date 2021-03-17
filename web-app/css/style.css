@@ -51,12 +51,12 @@ button.a{
 .add{
     width:100%;
 }
-ul{
+.sort{
     padding-left: 0;
     width:25%;
     margin: 0 10px;
 }
-li{
+.sort>li{
     list-style: none;
     margin: 5px auto;
     height: 30px;
@@ -64,7 +64,7 @@ li{
 .recommend{
     margin-top:40px;
 }
-ul.recommendadd{
+.sort > .recommendadd{
     margin:auto;
     width:50%;
 }
